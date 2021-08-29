@@ -12,6 +12,8 @@ const Home: NextPage = () => {
       </Head>
 
       <h1>Web Project Design & Development</h1>
+      <p> Stylings to come later!</p>
+      <p>Assignment 1: <a href="/assignment1/index.html">Formatting Text</a> </p>
     </div>
   )
 }
