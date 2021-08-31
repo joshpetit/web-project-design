@@ -32,3 +32,8 @@ ul {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.secondaryTitle {
+  text-align: start;
+  max-width: 90%;
+  color: #4f4f4f;
+}
