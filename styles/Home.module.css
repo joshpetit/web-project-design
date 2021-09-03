@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-color: #F8F8F8
+  flex-basis: auto;
 }
 
 .primary {
@@ -105,18 +105,20 @@
 }
 
 .main {
-  position: relative;
   display: flex;
   justify-content: start;
   align-self: center;
+  flex-basis: auto;
   max-width: 75vw;
   height: 100%;
   width: 100%;
   background-color: #FFFFFF;
+  flex-wrap: wrap;
 }
 
 .textSection {
   display: flex;
+  flex: 2;
   flex-direction: column;
   /*width: 30vw;*/
   margin-top: 50px;
@@ -126,7 +128,7 @@
 }
 
 .textBlob {
-  width: 580px;
+  width: 34vw;
   margin: 15px;
 }
 
@@ -144,13 +146,11 @@
 
 .assignments {
   display: flex;
+  flex: 2;
   flex-direction: column;
   background-color: #F6F7FF;
-  height: 100%;
   width: 100%;
-  margin-right: 120px;
   padding: 25px;
-
   padding-left: 75;
   padding-right: 75;
 }
@@ -160,4 +160,5 @@
 }
 
 .assignment {
+  margin: 10px;
 }
