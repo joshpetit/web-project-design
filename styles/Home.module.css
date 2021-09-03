@@ -141,3 +141,23 @@
   margin: 0;
   padding: 0;
 }
+
+.assignments {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F7FF;
+  height: 100%;
+  width: 100%;
+  margin-right: 120px;
+  padding: 25px;
+
+  padding-left: 75;
+  padding-right: 75;
+}
+
+.assignments .assignmentTitle {
+  text-align: center;
+}
+
+.assignment {
+}

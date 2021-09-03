@@ -15,11 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.imgBanner}>
-      <div className={`${styles.primary} ${styles.navigation}`}>
-        <NavButton title="Assignments" link="/index.html"/>
-        <NavButton title="Home" link="/index.html"/>
-        <NavButton title="Final Project" link="/index.html"/>
-      </div>
+        <div className={`${styles.primary} ${styles.navigation}`}>
+          <NavButton title="Assignments" link="/index.html"/>
+          <NavButton title="Home" link="/index.html"/>
+          <NavButton title="Final Project" link="/index.html"/>
+        </div>
 
       </div>
 
@@ -37,6 +37,13 @@ const Home: NextPage = () => {
               To reach me or see more of what I’m working on, checkout these links:
             </p>
           </div>
+        </div>
+        <div className={styles.assignments}>
+          <h3 className={styles.assignmentTitle}>Class Assignments:</h3>
+          <Assignment number={1} link="./index.html" name="yeet"/>
+          <Assignment number={1} link="./index.html" name="yeet"/>
+          <Assignment number={1} link="./index.html" name="yeet"/>
+          <Assignment number={1} link="./index.html" name="yeet"/>
         </div>
       </main>
     </div>
@@ -62,10 +69,8 @@ interface AssignmentProps {
 
 
 const Assignment: React.FC<AssignmentProps> = ({ number, name, link }) => (
-  <div>
-    <p>
+  <div className={styles.assignment}>
       Assignment {number}: <a href={link}>{name}</a>
-    </p>
   </div>
 );
 
