@@ -106,11 +106,10 @@
 
 .main {
   display: flex;
+  flex: 1;
   justify-content: start;
   align-self: center;
-  flex-basis: auto;
   max-width: 75vw;
-  height: 100%;
   width: 100%;
   background-color: #FFFFFF;
   flex-wrap: wrap;
@@ -118,13 +117,14 @@
 
 .textSection {
   display: flex;
-  flex: 2;
+  flex: 3;
   flex-direction: column;
-  /*width: 30vw;*/
+  align-items: center;
   margin-top: 50px;
-  margin-left: 120px;
-  margin-right: 120px;
   padding: 8px;
+  flex: 0 0 40%;
+  height: fit-content;
+  flex-grow: 1;
 }
 
 .textBlob {
