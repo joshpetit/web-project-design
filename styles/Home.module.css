@@ -1,0 +1,143 @@
+.container {
+  font-family: Inconsolata;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #F8F8F8
+}
+
+.primary {
+  background-color: #7879F1;
+  color: #FFFFFF;
+}
+
+.tertiary {
+  background-color: #A5A6F6;
+}
+
+.secondary {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.title {
+  font-style: normal;
+  font-size: 144px;
+  line-height: 151px;
+}
+
+.heading1 {
+  font-style: normal;
+  font-size: 64px;
+  line-height: 67px;
+}
+
+.heading2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 67px;
+}
+
+.container h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 67px;
+}
+
+
+.heading3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.navigation .button,
+.heading4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.container a {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  text-decoration-line: underline;
+  color: #7879F1;
+}
+
+.imgBanner {
+  height: 25%;
+  width: 100%;
+  background-color: #544f57;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.navigation {
+  display: flex;
+  margin-top: auto;
+  transform: translate(0%, 50%);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 1;
+}
+
+.navigation .button {
+  text-align: center;
+  margin: 0px 30px;
+  padding: 10px;
+  padding: 0px 7px;
+  font-weight: bold;
+  transition: 150ms;
+}
+
+.navigation .button:hover {
+  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  max-width: 75vw;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  /*width: 30vw;*/
+  margin-top: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 8px;
+}
+
+.textBlob {
+  width: 580px;
+  margin: 15px;
+}
+
+.textSection h2 {
+  margin: 0px;
+  margin-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.textSection p {
+  margin: 0;
+  padding: 0;
+}
