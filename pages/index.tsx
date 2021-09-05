@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Image from "next/image";
-import assignments from "./assignments.json";
+import styles from "@styles/Home.module.css";
+import Navigation from "@components/navigation/navigation";
+import Socials from "@components/social";
+import Assignments from "@components/assignments";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      {" "}
       <Head>
+        {" "}
         <title>Web Project Design & Development</title>
         <meta
           name="description"
@@ -15,21 +18,18 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.imgBanner}>
-        <div className={`${styles.primary} ${styles.navigation}`}>
-          <NavButton title="Assignments" link="/index.html" />
-          <NavButton title="Home" link="https://petit.dev" />
-          <NavButton title="Final Project" link="/index.html" />
-        </div>
-      </div>
-
+      <Navigation />
       <main className={styles.main}>
         <div className={styles.textSection}>
           <div className={styles.textBlob}>
             <h2>About</h2>
             <p>
               This is a{" "}
-              <a target="_blank" rel="noreferrer" href="https://maximusrex.github.io/web-project-design/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://maximusrex.github.io/web-project-design/"
+              >
                 web project and design course
               </a>{" "}
               that I am currently taking at Duke University. My goal for this
@@ -43,72 +43,13 @@ const Home: NextPage = () => {
               To reach me or see more of what I’m working on, checkout these
               links:
             </p>
-            <div className={styles.linkSection}>
-              <SocialLink
-                site="GitHub"
-                link="https://github.com/joshpetit"
-                image="/github.png"
-              />
-              <SocialLink
-                site="LinkedIn"
-                link="https://linkedin.com/in/joshua-petitma/"
-                image="/li.png"
-              />
-              <SocialLink
-                site="Instagram"
-                link="https://instagram.com/josh.petitma/"
-                image="/insta.webp"
-              />
-            </div>
+            <Socials />
           </div>
         </div>
-        <div className={styles.assignments}>
-          <h3 className={styles.assignmentTitle}>Class Assignments:</h3>
-          {assignments.map( ({name, link}, index) =>
-          <Assignment key={index} number={index + 1} link={link} name={name}/>)
-          }
-        </div>
+        <Assignments />
       </main>
     </div>
   );
 };
-
-interface SocialProps {
-  site: string;
-  link: string;
-  image: string;
-}
-
-const SocialLink: React.FC<SocialProps> = ({ site, link, image }) => (
-  <a target="_blank" rel="noreferrer" href={link}>
-    <div className={styles.socialLink}>
-      <div className={styles.socialImage}>
-        <Image src={image} alt="ok" height="27px" width="27px" />
-      </div>
-      {site}
-    </div>
-  </a>
-);
-
-interface NavigationButtonProps {
-  title: string;
-  link: string;
-}
-
-const NavButton: React.FC<NavigationButtonProps> = ({ title, link }) => (
-  <div className={styles.button}>{title}</div>
-);
-
-interface AssignmentProps {
-  number: number;
-  name: string;
-  link: string;
-}
-
-const Assignment: React.FC<AssignmentProps> = ({ number, name, link }) => (
-  <div className={styles.assignment}>
-    Assignment {number}: <a href={link}>{name}</a>
-  </div>
-);
 
 export default Home;
