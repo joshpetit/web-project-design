@@ -23,7 +23,11 @@ const Home: NextPage = () => {
             <h2>About</h2>
             <p>
               This is a{" "}
-              <a target="_blank" rel="noreferrer" href="https://maximusrex.github.io/web-project-design/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://maximusrex.github.io/web-project-design/"
+              >
                 web project and design course
               </a>{" "}
               that I am currently taking at Duke University. My goal for this
@@ -40,13 +44,10 @@ const Home: NextPage = () => {
             <Socials />
           </div>
         </div>
-          <Assignments />
+        <Assignments />
       </main>
     </div>
   );
 };
-
-
-
 
 export default Home;
