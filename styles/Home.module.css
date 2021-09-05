@@ -8,21 +8,6 @@
   flex-basis: auto;
 }
 
-.container h2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 67px;
-}
-
-.container a {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 25px;
-  text-decoration-line: underline;
-  color: #7879f1;
-}
-
 .main {
   display: flex;
   flex: 1;
@@ -33,6 +18,13 @@
   background-color: #ffffff;
   flex-wrap: wrap;
 }
+
+@media(max-width: 1000px) {
+  .main {
+    max-width: 95vw;
+  }
+}
+
 
 .textSection {
   display: flex;
