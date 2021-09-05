@@ -12,6 +12,7 @@
 }
 
 .navigationBar{
+  overflow: hidden;
   display: flex;
   margin-top: auto;
   transform: translate(0%, 50%);
@@ -23,7 +24,7 @@
 }
 
 .imgBanner {
-  height: 25%;
+  height: 20vh;
   width: 100%;
   background-color: #544f57;
   display: flex;
@@ -39,6 +40,7 @@
   padding: 0px 7px;
   font-weight: bold;
   transition: 150ms;
+  height: 100%;
 }
 
 .navigationBar .button:hover {
