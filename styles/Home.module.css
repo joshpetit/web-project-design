@@ -22,6 +22,7 @@
   text-decoration-line: underline;
   color: #7879f1;
 }
+
 .main {
   display: flex;
   flex: 1;
@@ -46,8 +47,13 @@
 }
 
 .textBlob {
-  width: 34vw;
   margin: 15px;
+}
+
+@media(min-width: 1000px) {
+  .textBlob {
+    width: 34vw;
+  }
 }
 
 .textSection h2 {
@@ -61,4 +67,3 @@
   margin: 0;
   padding: 0;
 }
-

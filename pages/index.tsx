@@ -8,7 +8,9 @@ import Assignments from "@components/assignments";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      {" "}
       <Head>
+        {" "}
         <title>Web Project Design & Development</title>
         <meta
           name="description"
