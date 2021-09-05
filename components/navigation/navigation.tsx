@@ -22,5 +22,4 @@ const NavButton: React.FC<NavigationButtonProps> = ({ title, link }) => (
   <div className={styles.button}>{title}</div>
 );
 
-
 export default Navigation;

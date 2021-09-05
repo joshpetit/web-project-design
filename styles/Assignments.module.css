@@ -1,0 +1,19 @@
+.assignments {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  background-color: #f6f7ff;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 75;
+  padding-right: 75;
+}
+
+.assignments .assignmentTitle {
+  text-align: center;
+}
+
+.assignment {
+  margin: 10px;
+}
+
