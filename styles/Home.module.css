@@ -28,37 +28,11 @@
   line-height: 151px;
 }
 
-.heading1 {
-  font-style: normal;
-  font-size: 64px;
-  line-height: 67px;
-}
-
-.heading2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 67px;
-}
-
 .container h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 67px;
-}
-
-.heading3 {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 50px;
-}
-
-.navigation .button,
-.heading4 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 38px;
 }
 
 .container a {
@@ -68,41 +42,6 @@
   text-decoration-line: underline;
   color: #7879f1;
 }
-
-.imgBanner {
-  height: 25%;
-  width: 100%;
-  background-color: #544f57;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-}
-
-.navigation {
-  display: flex;
-  margin-top: auto;
-  transform: translate(0%, 50%);
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 50px;
-  z-index: 1;
-}
-
-.navigation .button {
-  text-align: center;
-  margin: 0px 30px;
-  padding: 10px;
-  padding: 0px 7px;
-  font-weight: bold;
-  transition: 150ms;
-}
-
-.navigation .button:hover {
-  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
 .main {
   display: flex;
   flex: 1;

@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import assignments from "./assignments.json";
+import Navigation from "@components/navigation/navigation";
 
 const Home: NextPage = () => {
   return (
@@ -15,14 +16,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.imgBanner}>
-        <div className={`${styles.primary} ${styles.navigation}`}>
-          <NavButton title="Assignments" link="/index.html" />
-          <NavButton title="Home" link="https://petit.dev" />
-          <NavButton title="Final Project" link="/index.html" />
-        </div>
-      </div>
-
+      <Navigation />
       <main className={styles.main}>
         <div className={styles.textSection}>
           <div className={styles.textBlob}>
@@ -90,14 +84,6 @@ const SocialLink: React.FC<SocialProps> = ({ site, link, image }) => (
   </a>
 );
 
-interface NavigationButtonProps {
-  title: string;
-  link: string;
-}
-
-const NavButton: React.FC<NavigationButtonProps> = ({ title, link }) => (
-  <div className={styles.button}>{title}</div>
-);
 
 interface AssignmentProps {
   number: number;
