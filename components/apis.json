@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Government API",
+    "link": "https://www.data.gov/developers/apis"
+  },
+  {
+    "name": "Weather API",
+    "link": "https://openweathermap.org/"
+  },
+  {
+    "name": "wttr.in (do '$ curl wttr.in')",
+    "link": "wttr.in"
+  },
+  {
+    "name": "Libre translate",
+    "link": "https://libretranslate.com/"
+  }
+]
